@@ -2,17 +2,10 @@
 	var speedRequest = Request.Params["speed"];
 	var speed = 1;
 	var clear = int.TryParse(speedRequest, out speed);
-	var errorMssage = "no speed provided, please input http://lynxyweb.azurewebsites.net/?speed=25";
+	var errorMssage = "Standart speed=0, please input http://lynxyweb.azurewebsites.net/?speed=25";
 }
 
 <meta charset="utf-8">
-
-<script>
-@if(!clear){
-	Response.Write(String.Format("alert({0});", errorMssage));
-}
-return false;
-</script>
 
 <style>
 
